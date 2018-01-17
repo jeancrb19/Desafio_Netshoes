@@ -2,7 +2,7 @@ class Methods
   include Capybara::DSL
 
   def seleciona_maior_tamanho
-    #conta quantos tamanhos tem na tela e armazena em uma variavel
+    #Dentro da classe que possui os tamanhos, conta a quantidade de tamanhos que tem na tela e armazena dentro de uma variavel
     qtd_tamanho = within('.product-attr-list.attr-size') do
       all('.attr-name').count
     end
