@@ -3,8 +3,10 @@ class Methods
 
   def seleciona_maior_tamanho
     #conta quantos tamanhos tem na tela e armazena em uma variavel
-    qtd_tamanho = all('.attr-name').count
-
+    qtd_tamanho = within('.product-attr-list.attr-size') do
+      all('.attr-name').count
+    end
+    puts "Tamanho #{qtd_tamanho}"
     #subtrai - 1 dessa variavel para que seja possível chamarmos ela pela posição
     qtd_tamanho = qtd_tamanho - 1
 
