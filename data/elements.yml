@@ -1,0 +1,4 @@
+netshoes: 'http://www.netshoes.com.br'
+barra_pesquisa: '#search'
+buscar: '#input-search-bt'
+produto: '.nm-product-link'
